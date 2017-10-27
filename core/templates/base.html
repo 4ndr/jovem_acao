@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jovens em Ação</title>
+    <script src="{% static 'jquery-3.2.1.js' %}"></script>
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.m.css' %}" rel="stylesheet">
+    <link href="{% static 'my.css' %}" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="" width="60%" alt="Brand" src="{% static 'logo.png' %}">
+
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Início</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Projetos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Membros</a></li>
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <div class="container">
+
+        {% block conteudo %}{% endblock %}
+
+        <div class="jumbotron">
+            <h2>Lorem ipsun</h2>
+            <p>Inclusive capitalism shift donors revitalize celebrate; hack elevate Kony 2012 shifting landscape generosity. Emergent relief economic independence volunteer informal economies life-saving visionary, growth equality community immunize civic engagement. Crisis management forward-thinking, focus on impact giving, policy healthcare solve; cornerstone time of extraordinary change human experience making progress. Advocate catalyze, affordable health care, outcomes justice invest. Care; citizens of change compassion solution, gender equality accelerate social worker equity donation foster. Challenges of our times working alongside UNHCR Oxfam global health country enable medical impact achieve. Long-term, UNICEF beneficiaries honesty, meaningful work combat malaria, foundation; urban disrupt liberal catalyst effectiveness.</p>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Lorem ipsun</h2>
+            <p>Inclusive capitalism shift donors revitalize celebrate; hack elevate Kony 2012 shifting landscape generosity. Emergent relief economic independence volunteer informal economies life-saving visionary, growth equality community immunize civic engagement. Crisis management forward-thinking, focus on impact giving, policy healthcare solve; cornerstone time of extraordinary change human experience making progress. Advocate catalyze, affordable health care, outcomes justice invest. Care; citizens of change compassion solution, gender equality accelerate social worker equity donation foster. Challenges of our times working alongside UNHCR Oxfam global health country enable medical impact achieve. Long-term, UNICEF beneficiaries honesty, meaningful work combat malaria, foundation; urban disrupt liberal catalyst effectiveness.</p>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Lorem ipsun</h2>
+            <p>Inclusive capitalism shift donors revitalize celebrate; hack elevate Kony 2012 shifting landscape generosity. Emergent relief economic independence volunteer informal economies life-saving visionary, growth equality community immunize civic engagement. Crisis management forward-thinking, focus on impact giving, policy healthcare solve; cornerstone time of extraordinary change human experience making progress. Advocate catalyze, affordable health care, outcomes justice invest. Care; citizens of change compassion solution, gender equality accelerate social worker equity donation foster. Challenges of our times working alongside UNHCR Oxfam global health country enable medical impact achieve. Long-term, UNICEF beneficiaries honesty, meaningful work combat malaria, foundation; urban disrupt liberal catalyst effectiveness.</p>
+        </div>
+    </div>
+
+
+<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3> Contact </h3>
+                <ul>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3> Important Links </h3>
+                <ul>
+                    <li> <a href="#"> Admission </a> </li>
+                    <li> <a href="#"> Academic </a> </li>
+                    <li> <a href="#"> Career </a> </li>
+                    <li> <a href="#"> Administration </a> </li>
+                    <li> <a href="#"> Notice </a> </li>
+                    <li> <a href="#"> Tender </a> </li>
+                    <li> <a href="login.php"> Teacher Login </a> </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3> Redes Sociais </h3>
+                <div class="social-media">
+                    <ul class="list-inline">
+                        <li><a href="http://www.nextbootstrap.com/" title="">
+                            <img src="{% static "icons/circle_color/facebook.svg" %}">
+                        </a></li>
+                        <li><a href="http://www.nextbootstrap.com/" title="">
+                            <img src="{% static "icons/circle_color/google+.svg" %}">
+                        </a></li>
+                        <li><a href="http://www.nextbootstrap.com/" title="">
+                            <img src="{% static "icons/circle_color/instagram.svg" %}">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
