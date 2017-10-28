@@ -32,10 +32,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="{% url 'index' %}">Início</a></li>
+                    <li><a href="{% url 'sobre_nos:mostra_mvv' %}">Sobre Nós</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="{% url 'projetos:projetos' %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Projetos <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>

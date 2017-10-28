@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<div class="jumbotron">
+    <h2>Nossa Missão</h2>
+    {% if missao %}
+        <p>{{ missao }}</p>
+    {% else %}
+        <p>Sem valores</p>
+    {% endif %}
+</div>
+
+<div class="jumbotron">
+    <h2>Nossos Visão</h2>
+    {% if visao %}
+        <p>{{ visao }}</p>
+    {% else %}
+        <p>Sem valores</p>
+    {% endif %}
+</div>
+
+<div class="jumbotron">
+    <h2>Nossos Valores</h2>
+    {% if valores %}
+        <p>{{ valores }}</p>
+    {% else %}
+        <p>Sem valores</p>
+    {% endif %}
+</div>
+
+{% endblock %}

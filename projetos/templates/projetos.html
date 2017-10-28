@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+    <div class="container marketing">
+        <div class="row text-center" style="margin-bottom: 20px">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+                <div class="retangulo">
+                    <h2 style="color: #fff;">Projetos</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for projeto in projetos %}
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a href="{{ projeto.slug }}">
+                        <div class="circulo text-center">
+                            <h3 style="color: #fff; margin-top: 50px"> {{ projeto.nome }}</h3>
+                            <img src="{{ projeto.icone.url }}" alt="Generic placeholder image">
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
